@@ -1,16 +1,10 @@
 {
   "name": "cdk-lambda-fleet",
   "version": "0.0.0",
+  "private": true,
   "description": "Deploy multiple AWS Lambda functions as docker images using AWS Cloud Development Kit",
-  "main": "aws/constructs/LambdaFleet.js",
-  "types": "aws/constructs/LambdaFleet.d.ts",
   "license": "MIT",
   "author": "Sebastian Müller <mail@sbstjn.com> (https://sbstjn.com)",
-  "homepage": "https://github.com/sbstjn/cdk-lambda-fleet",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sbstjn/cdk-lambda-fleet.git"
-  },  
   "tags": [
     "aws",
     "aws-cdk",
