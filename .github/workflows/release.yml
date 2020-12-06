@@ -7,7 +7,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
 
     steps:
       - name: Checkout
@@ -15,6 +14,7 @@ jobs:
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
+        timeout-minutes: 1
         id: semantic
         with:
           extra_plugins: |
