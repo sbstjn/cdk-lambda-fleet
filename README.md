@@ -68,11 +68,9 @@ export class FleetStack extends cdk.Stack {
 # Deploy all functions
 
 $ > yarn deploy
-```
 
-## Usage
+[…]
 
-```r
 Fleet.FleetLambdaNodeExampleArnXYZ = "arn:aws:lambda:eu-central-1:123:function:Fleet-FleetLambdaNodeExampleXYZ-XYZ"
 Fleet.FleetLambdaPythonExampleArnXYZ = "arn:aws:lambda:eu-central-1:123:function:Fleet-FleetLambdaPythonExampleXYZ-XYZ"
 Fleet.FleetLambdaTypescriptExampleArnXYZ = "arn:aws:lambda:eu-central-1:123:function:Fleet-FleetLambdaTypescriptExampleXYZ-XYZ"
