@@ -5,9 +5,11 @@
 
 > Deploy multiple AWS Lambda functions as container images to Amazon ECR with CDK.
 
-## Intention
+## Examples
 
-Have a CloudFormation stack with multiple AWS Lambda functions in different langauges.
+- [`src/lambda-node-example`](src/lambda-node-example)
+- [`src/lambda-python-example`](src/lambda-python-example)
+- [`src/lambda-typescript-example`](src/lambda-typescript-example)
 
 ## Usage
 
@@ -55,12 +57,6 @@ export class FleetStack extends cdk.Stack {
   }
 }
 ```
-
-## Examples
-
-- [`src/lambda-node-example`](src/lambda-node-example)
-- [`src/lambda-python-example`](src/lambda-python-example)
-- [`src/lambda-typescript-example`](src/lambda-typescript-example)
 
 ## Deployment
 
