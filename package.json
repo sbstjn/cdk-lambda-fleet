@@ -1,0 +1,46 @@
+{
+  "name": "cdk-lambda-fleet",
+  "version": "0.0.0",
+  "description": "Deploy multiple AWS Lambda functions as docker images using AWS Cloud Development Kit",
+  "main": "aws/constructs/LambdaFleet.js",
+  "types": "aws/constructs/LambdaFleet.d.ts",
+  "license": "MIT",
+  "author": "Sebastian Müller <mail@sbstjn.com> (https://sbstjn.com)",
+  "homepage": "https://github.com/sbstjn/cdk-lambda-fleet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbstjn/cdk-lambda-fleet.git"
+  },  
+  "tags": [
+    "aws",
+    "aws-cdk",
+    "cdk",
+    "construct",
+    "lambda",
+    "docker",
+    "serverless"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "predeploy": "yarn build",
+    "deploy": "cdk deploy"
+  },
+  "devDependencies": {
+    "@aws-cdk/core": "1.76.0",
+    "@aws-cdk/assert": "1.76.0",
+    "@aws-cdk/aws-ecr": "^1.76.0",
+    "@aws-cdk/aws-lambda": "^1.76.0",
+    "@types/camelcase": "^5.2.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "1.76.0",
+    "camelcase": "^6.2.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  }
+}
