@@ -35,6 +35,10 @@ Using the **AWS CDK**, a docker image will be created and deployed to **Amazon E
 
 When using the AWS CDK in TypeScript, you can use the published `LambdaFleet` construct:
 
+```bash
+$ > yarn install cdk-lambda-fleet
+```
+
 ```typescript
 import * as path from "path";
 import * as cdk from "@aws-cdk/core";
