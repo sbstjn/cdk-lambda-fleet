@@ -29,10 +29,10 @@
     "deploy": "cdk deploy"
   },
   "devDependencies": {
-    "@aws-cdk/core": "1.76.0",
     "@aws-cdk/assert": "1.76.0",
     "@aws-cdk/aws-ecr": "^1.76.0",
     "@aws-cdk/aws-lambda": "^1.76.0",
+    "@aws-cdk/core": "1.76.0",
     "@types/camelcase": "^5.2.0",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
