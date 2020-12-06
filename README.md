@@ -38,20 +38,14 @@ export class FleetStack extends cdk.Stack {
 
 ### Configuration
 
-You can fork this repository and create a folder like `src/lambda-node-example` and store a `Dockerfile` there:
+You can fork this repository and create a folder like `src/lambda-python-example` and store a `Dockerfile` there:
 
 ```Dockerfile
-FROM amazon/aws-lambda-nodejs:12
+FROM amazon/aws-lambda-python:3.8
 
-ARG FUNCTION_DIR="/var/task"
-
-RUN mkdir -p ${FUNCTION_DIR}
-
-COPY package.json ${FUNCTION_DIR}
-
-RUN npm install
-
-COPY handler.js ${FUNCTION_DIR}
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+COPY handler.py ./
 
 CMD [ "handler.run" ]
 ```
