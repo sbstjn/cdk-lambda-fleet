@@ -29,7 +29,7 @@ COPY handler.js ${FUNCTION_DIR}
 CMD [ "handler.run" ]
 ```
 
-Using the **AWS CDK**, a docker image will be created and deployed to **Amazon ECR** for every folder in `src/`. After uploading the image, an **AWS Lambda** will be created or updated to use the latest image. Run `yarn deploy` to deploy all functions and output the function's arn.
+Using the **AWS CDK**, a docker image will be created and deployed to **Amazon ECR** for every folder in `src/`. After uploading the image, an **AWS Lambda** will be created or updated to use the latest image.
 
 ## CDK Construct
 
@@ -50,7 +50,7 @@ export class FleetStack extends cdk.Stack {
     super(scope, id, props);
 
     new LambdaFleet(this, "Fleet", {
-      path: path.resolve(__dirname, "../../src"),
+      path: path.resolve(__dirname, "../src"),
     });
   }
 }
