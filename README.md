@@ -1,6 +1,7 @@
 # AWS CDK: Lambda Fleet
 
-[![MIT License](https://badgen.now.sh/badge/License/MIT/purple?1)](https://github.com/sbstjn/cdk-lambda-fleet/blob/master/LICENSE.md)
+[![MIT License](https://badgen.now.sh/badge/License/MIT/purple?3)](https://github.com/sbstjn/cdk-lambda-fleet/blob/master/LICENSE.md)
+[![cdk-lambda-fleet on NPM](https://badgen.net/npm/v/cdk-lambda-fleet?3)](https://www.npmjs.com/package/cdk-lambda-fleet)
 
 > Deploy multiple AWS Lambda functions as container images to Amazon ECR with CDK.
 
