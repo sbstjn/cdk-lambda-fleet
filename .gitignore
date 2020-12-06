@@ -9,4 +9,4 @@ cdk.out
 # Parcel default cache directory
 .parcel-cache
 
-aws/constructs/LambdaFleet.js
+aws/**/*.js
