@@ -11,28 +11,6 @@
 - [`src/lambda-python-example`](src/lambda-python-example)
 - [`src/lambda-typescript-example`](src/lambda-typescript-example)
 
-## Usage
-
-You can fork this repository and create a folder like `src/lambda-node-example` and store a `Dockerfile` there:
-
-```Dockerfile
-FROM amazon/aws-lambda-nodejs:12
-
-ARG FUNCTION_DIR="/var/task"
-
-RUN mkdir -p ${FUNCTION_DIR}
-
-COPY package.json ${FUNCTION_DIR}
-
-RUN npm install
-
-COPY handler.js ${FUNCTION_DIR}
-
-CMD [ "handler.run" ]
-```
-
-Using the **AWS CDK**, a docker image will be created and deployed to **Amazon ECR** for every folder in `src/`. After uploading the image, an **AWS Lambda** will be created or updated to use the latest image.
-
 ## CDK Construct
 
 When using the AWS CDK in TypeScript, you can use the published `LambdaFleet` construct:
@@ -57,6 +35,28 @@ export class FleetStack extends cdk.Stack {
   }
 }
 ```
+
+### Configuration
+
+You can fork this repository and create a folder like `src/lambda-node-example` and store a `Dockerfile` there:
+
+```Dockerfile
+FROM amazon/aws-lambda-nodejs:12
+
+ARG FUNCTION_DIR="/var/task"
+
+RUN mkdir -p ${FUNCTION_DIR}
+
+COPY package.json ${FUNCTION_DIR}
+
+RUN npm install
+
+COPY handler.js ${FUNCTION_DIR}
+
+CMD [ "handler.run" ]
+```
+
+Using the **AWS CDK**, a docker image will be created and deployed to **Amazon ECR** for every folder in `src/`. After uploading the image, an **AWS Lambda** will be created or updated to use the latest image.
 
 ## Deployment
 
